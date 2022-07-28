@@ -4,6 +4,7 @@ from loguru import logger
 import joblib
 from datetime import datetime
 import time
+import numpy as np
 
 from sentence_transformers import SentenceTransformer
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -23,17 +24,6 @@ GLOBAL_CONFIG = {
         "log_destination": "../data/logs.out"
     }
 }
-
-LABEL_SET = [
-    'Business',
-    'Sci/Tech',
-    'Software and Developement',
-    'Entertainment',
-    'Sports',
-    'Health',
-    'Toons',
-    'Music Feeds'
-]
 
 class PredictRequest(BaseModel):
     source: str
@@ -68,7 +58,6 @@ class NewsCategoryClassifier:
     def __init__(self, config: dict) -> None:
         self.config = config
         """
-        [TO BE IMPLEMENTED]
         1. Load the sentence transformer model and initialize the `featurizer` of type `TransformerFeaturizer` (Hint: revisit Week 1 Step 4)
         2. Load the serialized model as defined in GLOBAL_CONFIG['model'] into memory and initialize `model`
 
@@ -103,7 +92,6 @@ class NewsCategoryClassifier:
 
     def predict_proba(self, model_input: dict) -> dict:
         """
-        [TO BE IMPLEMENTED]
         Using the `self.pipeline` constructed during initialization, 
         run model inference on a given model input, and return the 
         model prediction probability scores across all labels
@@ -116,25 +104,16 @@ class NewsCategoryClassifier:
         }
         """
         # Run model inference on model_input
-        Y_pred_proba = self.pipeline.predict_proba(model_input)[0].tolist()
+        Y_pred_proba = self.pipeline.predict_proba(np.array([model_input]))
 
-        output = {
-            LABEL_SET[0]: Y_pred_proba[0],
-            LABEL_SET[1]: Y_pred_proba[1],
-            LABEL_SET[2]: Y_pred_proba[2],
-            LABEL_SET[3]: Y_pred_proba[3],
-            LABEL_SET[4]: Y_pred_proba[4],
-            LABEL_SET[5]: Y_pred_proba[5],
-            LABEL_SET[6]: Y_pred_proba[6],
-            LABEL_SET[7]: Y_pred_proba[7],
-        }
+        # Make output dict
+        output = {l: p for l, p in zip(self.pipeline.classes_, Y_pred_proba[0])}
 
         # return the model prediction probability scores across all labels
         return output
 
     def predict_label(self, model_input: dict) -> str:
         """
-        [TO BE IMPLEMENTED]
         Using the `self.pipeline` constructed during initialization,
         run model inference on a given model input, and return the
         model prediction label
@@ -150,7 +129,6 @@ app = FastAPI()
 @app.on_event("startup")
 def startup_event():
     """
-        [TO BE IMPLEMENTED]
         2. Initialize the `NewsCategoryClassifier` instance to make predictions online. You should pass any relevant config parameters from `GLOBAL_CONFIG` 
         that are needed by NewsCategoryClassifier 
         3. Open an output file to write logs, at the destimation specififed by GLOBAL_CONFIG['service']['log_destination']
@@ -175,7 +153,6 @@ def startup_event():
 def shutdown_event():
     # clean up
     """
-        [TO BE IMPLEMENTED]
         1. Make sure to flush the log file and close any file pointers to avoid corruption
         2. Any other cleanups
     """
@@ -188,7 +165,6 @@ def predict(request: PredictRequest, newsclassifier: NewsCategoryClassifier = De
     # construct the data to be logged
     # construct response
     """
-        [TO BE IMPLEMENTED]
         1. run model inference and get model predictions for model inputs specified in `request`
         2. Log the following data to the log file (the data should be logged to the file that was opened in `startup_event`, and writes to the path defined in GLOBAL_CONFIG['service']['log_destination'])
         {

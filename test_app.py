@@ -71,7 +71,6 @@ def test_predict_es_lang():
 
 def test_predict_non_ascii():
     """
-    [TO BE IMPLEMENTED]
     Test the "/predict" endpoint, with an input text that has non-ASCII characters. 
     Does the tokenizer and classifier handle this case correctly? Does it return an error?
     """
