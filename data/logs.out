@@ -1,0 +1,77 @@
+Setup completed
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:40:42', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 6.447090148925781}
+Shutting down application
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:54:21', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.915180921554565}
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:54:48', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.347209453582764}
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:55:21', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.258995771408081}
+Shutting down application
+Setup completed
+Setup completed
+Shutting down application
+Setup completed
+{'timestamp': '2022:07:28, 10:55:41', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.085198640823364}
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:56:05', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.042015552520752}
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:58:12', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.1519153118133545}
+Setup completed
+{'timestamp': '2022:07:28, 10:58:18', 'request': PredictRequest(source='El País', url='', title='Weis elige no hacer pickoff', description='Bill Belichick no tendrá que preocuparse de que Charlie Weis saquee a su cuerpo técnico para Notre Dame. Pero tendremos que ver si el nuevo entrenador de los Miami Dolphins, Nick Saban, tiene el ojo puesto en alguno de sus antiguos asistentes.'), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 3.9317312240600586}
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 10:59:23', 'request': PredictRequest(source='Reuters World', url='http://www.reuters.com/newsArticle.jhtml?type=worldNewsstoryID=7228962', title='Peru Arrests Siege Leader, to Storm Police Post', description='LIMA, Peru (Reuters) - Peruvian authorities arrested a former army major who led a three-day uprising in a southern  Andean town and will storm the police station where some of his  200 supporters remain unless they surrender soon, Prime  Minister Carlos Ferrero said on Tuesday.'), 'prediction': {'scores': {'Business': 0.1310893180432746, 'Sci/Tech': 0.24038194047951433, 'Software and Developement': 0.04101972355944205, 'Entertainment': 0.00819807815673622, 'Sports': 0.13563486487567103, 'Health': 0.021787358246536784, 'Toons': 0.39992119396852954, 'Music Feeds': 0.02196752267029535}, 'label': 'Sports'}, 'latency': 6.859967947006226}
+Setup completed
+Setup completed
+Shutting down application
+{'timestamp': '2022:07:28, 11:00:40', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 21.712485790252686}
+Setup completed
+{'timestamp': '2022:07:28, 11:01:02', 'request': PredictRequest(source='El País', url='', title='Weis elige no hacer pickoff', description='Bill Belichick no tendrá que preocuparse de que Charlie Weis saquee a su cuerpo técnico para Notre Dame. Pero tendremos que ver si el nuevo entrenador de los Miami Dolphins, Nick Saban, tiene el ojo puesto en alguno de sus antiguos asistentes.'), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 3.9418842792510986}
+Setup completed
+{'timestamp': '2022:07:28, 11:01:07', 'request': PredictRequest(source='Reuters World', url='http://www.reuters.com/newsArticle.jhtml?type=worldNewsstoryID=7228962', title='Peru Arrests Siege Leader, to Storm Police Post', description='LIMA, ® Peru (Reuters) - Peruvian authorities arrested a former army major who led a three-day uprising in a southern  Andean town and will storm the police station where some of his  200 supporters remain unless they surrender soon, Prime  Minister Carlos Ferrero said on Tuesday.'), 'prediction': {'scores': {'Business': 0.1310893180432746, 'Sci/Tech': 0.24038194047951433, 'Software and Developement': 0.04101972355944205, 'Entertainment': 0.00819807815673622, 'Sports': 0.13563486487567103, 'Health': 0.021787358246536784, 'Toons': 0.39992119396852954, 'Music Feeds': 0.02196752267029535}, 'label': 'Sports'}, 'latency': 4.40800929069519}
+Setup completed
+Setup completed
+{'timestamp': '2022:07:28, 11:01:37', 'request': PredictRequest(source='New York Times', url='', title='Weis chooses not to make pickoff', description="Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 5.86322546005249}
+Setup completed
+{'timestamp': '2022:07:28, 11:01:43', 'request': PredictRequest(source='El País', url='', title='Weis elige no hacer pickoff', description='Bill Belichick no tendrá que preocuparse de que Charlie Weis saquee a su cuerpo técnico para Notre Dame. Pero tendremos que ver si el nuevo entrenador de los Miami Dolphins, Nick Saban, tiene el ojo puesto en alguno de sus antiguos asistentes.'), 'prediction': {'scores': {'Business': 0.2105579091285209, 'Sci/Tech': 0.32591279734050443, 'Software and Developement': 0.07027369252302747, 'Entertainment': 0.00816977307038311, 'Sports': 0.2441966505968982, 'Health': 0.02136216321557091, 'Toons': 0.10489812186351508, 'Music Feeds': 0.014628892261579998}, 'label': 'Entertainment'}, 'latency': 3.888032913208008}
+Setup completed
+{'timestamp': '2022:07:28, 11:01:48', 'request': PredictRequest(source='Reuters World', url='http://www.reuters.com/newsArticle.jhtml?type=worldNewsstoryID=7228962', title='Peru Arrests Siege Leader, to Storm Police Post', description='LIMA, ® Peru vödör (Reuters) - Peruvian authorities arrested a former army major who led a three-day uprising in a southern  Andean town and will storm the police station where some of his  200 supporters remain unless they surrender soon, Prime  Minister Carlos Ferrero said on Tuesday.'), 'prediction': {'scores': {'Business': 0.1310893180432746, 'Sci/Tech': 0.24038194047951433, 'Software and Developement': 0.04101972355944205, 'Entertainment': 0.00819807815673622, 'Sports': 0.13563486487567103, 'Health': 0.021787358246536784, 'Toons': 0.39992119396852954, 'Music Feeds': 0.02196752267029535}, 'label': 'Sports'}, 'latency': 4.909658193588257}

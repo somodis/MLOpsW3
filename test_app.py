@@ -22,35 +22,51 @@ It would be nice to write some tests to ensure we don't regress!
 
 def test_root():
     """
-    [TO BE IMPLEMENTED]
     Test the root ("/") endpoint, which just returns a {"Hello": "World"} json response
     """
-    pass
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {"Hello": "World"}
 
 
 def test_predict_empty():
     """
-    [TO BE IMPLEMENTED]
     Test the "/predict" endpoint, with an empty request body
     """
-    pass
+    response = client.post("/predict")
+    assert response.status_code == 422
 
 
 def test_predict_en_lang():
     """
-    [TO BE IMPLEMENTED]
     Test the "/predict" endpoint, with an input text in English (you can use one of the test cases provided in README.md)
     """
-    pass
+    input={
+        "source": "New York Times",
+        "url": "",
+        "title": "Weis chooses not to make pickoff",
+        "description": "Bill Belichick won't have to worry about Charlie Weis raiding his coaching staff for Notre Dame. But we'll have to see whether new Miami Dolphins coach Nick Saban has an eye on any of his former assistants."
+    }
+    response = client.post("/predict", json=input)
+    assert response.status_code == 200
+    assert response.json()["label"] == 'Entertainment'
+    
 
 
 def test_predict_es_lang():
     """
-    [TO BE IMPLEMENTED]
     Test the "/predict" endpoint, with an input text in Spanish. 
     Does the tokenizer and classifier handle this case correctly? Does it return an error?
     """
-    pass
+    input={
+        "source": "El País",
+        "url": "",
+        "title": "Weis elige no hacer pickoff",
+        "description": "Bill Belichick no tendrá que preocuparse de que Charlie Weis saquee a su cuerpo técnico para Notre Dame. Pero tendremos que ver si el nuevo entrenador de los Miami Dolphins, Nick Saban, tiene el ojo puesto en alguno de sus antiguos asistentes."
+    }
+    response = client.post("/predict", json=input)
+    assert response.status_code == 200
+    assert response.json()["label"] == 'Entertainment'
 
 
 def test_predict_non_ascii():
@@ -59,4 +75,12 @@ def test_predict_non_ascii():
     Test the "/predict" endpoint, with an input text that has non-ASCII characters. 
     Does the tokenizer and classifier handle this case correctly? Does it return an error?
     """
-    pass
+    input={
+        "source": "Reuters World",
+        "url": "http://www.reuters.com/newsArticle.jhtml?type=worldNewsstoryID=7228962",
+        "title": "Peru Arrests Siege Leader, to Storm Police Post",
+        "description": "LIMA, ® Peru vödör (Reuters) - Peruvian authorities arrested a former army major who led a three-day uprising in a southern  Andean town and will storm the police station where some of his  200 supporters remain unless they surrender soon, Prime  Minister Carlos Ferrero said on Tuesday."
+    }
+    response = client.post("/predict", json=input)
+    assert response.status_code == 200
+    assert response.json()["label"] == 'Sports'
