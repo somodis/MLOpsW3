@@ -59,7 +59,6 @@ class TransformerFeaturizer(BaseEstimator, TransformerMixin):
     #transformation: return the encoding of the document as returned by the transformer model
     def transform(self, X, y=None):
         X_t = []
-        print(X)
         for doc in X:
             X_t.append(self.sentence_transformer_model.encode(doc))
         return X_t
@@ -119,8 +118,6 @@ class NewsCategoryClassifier:
         # Run model inference on model_input
         Y_pred_proba = self.pipeline.predict_proba(model_input)[0].tolist()
 
-        print('Y_pred_proba: ', Y_pred_proba)
-
         output = {
             LABEL_SET[0]: Y_pred_proba[0],
             LABEL_SET[1]: Y_pred_proba[1],
@@ -131,7 +128,6 @@ class NewsCategoryClassifier:
             LABEL_SET[6]: Y_pred_proba[6],
             LABEL_SET[7]: Y_pred_proba[7],
         }
-        print('output:', output)
 
         # return the model prediction probability scores across all labels
         return output
